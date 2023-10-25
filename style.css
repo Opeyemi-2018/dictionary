@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+}
+
+.dark-theme {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.main-container {
+  width: 900px;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.main-header {
+  padding: 15px;
+  background-color: #362fd9;
+}
+
+.header {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .fa {
+  color: #fff;
+  font-size: 30px;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #e3dffd;
+  border: none;
+}
+
+.search-input input[type="search"] {
+  font-size: 15px;
+  font-weight: 600;
+  height: 40px;
+}
+
+.search-input input[type="search"]:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.search-input input[type="search"]::-webkit-search-cancel-button {
+  margin-right: 50px;
+  font-size: 19px;
+}
+
+.search-input .fa-search {
+  position: absolute;
+  right: 2%;
+  top: 20%;
+  font-size: 20px;
+  border: none;
+  color: #362fd9;
+}
+
+.container {
+  margin-top: 30px;
+  padding: 15px;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.word-content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word-content h1 {
+  font-family: initial;
+  color: var(--secondary-color);
+}
+.word-content p {
+  color: #362fd9;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.word-content .play-logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3dffd;
+  border-radius: 50%;
+}
+
+.word-content .fa-play {
+  color: #362fd9;
+}
+
+.speech {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.speech hr {
+  width: 100%;
+  margin-left: 20px;
+  border-color: 1px solid #999;
+}
+
+.speech p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: cursive;
+  color: var(--secondary-color);
+}
+
+.meaning {
+  margin-top: 20px;
+  color: #999;
+  font-size: 20px;
+}
+
+.meaning-text {
+  margin-top: 20px;
+}
+
+.meaning-text li {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+.synonyms {
+  margin-top: 35px;
+  color: #999;
+}
+
+.synonyms strong {
+  color: #362fd9;
+  margin-left: 20px;
+}
+
+.second-speech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.second-speech p {
+  color: var(--secondary-color);
+}
+
+.second-speech hr {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.second-meaning {
+  margin: 25px 0;
+}
+
+.second-meaning p {
+  color: #999;
+  font-size: 20px;
+}
+
+.second-meaning li {
+  color: var(--secondary-color);
+}
+
+.source {
+  margin-top: 30px;
+}
+
+.source p {
+  color: #999;
+}
+
+.source a {
+  color: var(--secondary-color);
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    margin-bottom: 10px;
+  }
+
+  .header .fa {
+    font-size: 23px;
+  }
+
+  .search-input {
+    position: relative;
+  }
+
+  .search-input input[type="search"] {
+    font-size: 13px;
+    height: 35px;
+  }
+
+  .search-input input[type="search"]::-webkit-search-cancel-button {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+
+  .search-input .fa-search {
+    font-size: 16px;
+  }
+
+  .word-content {
+    margin-top: 10px;
+  }
+
+  .word-content h1 {
+    font-size: 19px;
+  }
+  .word-content p {
+    margin-top: 0px;
+    font-size: 13px;
+  }
+
+  .word-content .play-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .speech {
+    margin-top: 5px;
+  }
+
+  .speech p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .meaning {
+    margin-top: 20px;
+    color: #999;
+    font-size: 17px;
+  }
+
+  .meaning-text {
+    margin-top: 0px;
+  }
+
+  .meaning-text li {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 16px;
+  }
+
+  .synonyms {
+    margin-top: 10px;
+  }
+
+  .synonyms strong {
+    font-size: 15px;
+  }
+
+  .second-speech {
+    margin-top: 10px;
+  }
+
+  .second-meaning {
+    margin-top: 10px;
+  }
+
+  .second-meaning p {
+    font-size: 17px;
+  }
+
+  .source {
+    margin-top: 10px;
+  }
+
+  .source a {
+    font-size: 13px;
+  }
+}
